@@ -9,7 +9,7 @@ source:
   sha256: d45c835af0e539235e9cf46ae58d9447e206d145b13ecfe7447ad7b8fbdcf86d
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<=34]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,13 +26,15 @@ requirements:
     - {{ pin_compatible('numpy') }}
 
 test:
+  requires:
+    - pip
+    - pytest
   imports:
     - gsw
     - gsw.ice
   commands:
     - pip check
-  requires:
-    - pip
+    - pytest --pyargs gsw
 
 about:
   home: https://github.com/TEOS-10/GSW-Python/
