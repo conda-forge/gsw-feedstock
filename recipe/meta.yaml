@@ -20,6 +20,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -36,7 +37,7 @@ test:
     - pip check
     - pytest --pyargs gsw
   requires:
-    - pandas >=2 
+    - pandas >=2
     - pip
     - pytest
 
