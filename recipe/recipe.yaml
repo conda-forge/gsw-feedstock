@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.6.21"
+  version: "3.6.22"
   python_min: "3.11"
 
 package:
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gsw/gsw-${{ version }}.tar.gz
-  sha256: 6e0609d374916b4393484b9c7b32666d36dda74d900a40d19c766484ac295efa
+  sha256: d72d3bfd62fb8881e6b6a66fb1370cf7601e3e6b9cd2654872cb78e60e362bc8
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     version_independent: true
