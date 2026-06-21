@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.6.22"
+  version: "3.6.23"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gsw/gsw-${{ version }}.tar.gz
-  sha256: d72d3bfd62fb8881e6b6a66fb1370cf7601e3e6b9cd2654872cb78e60e362bc8
+  sha256: d14a734addfc96445ae84c800ad642d453ff174d48d6c30c0879a4425185b82a
 
 build:
   number: 0
